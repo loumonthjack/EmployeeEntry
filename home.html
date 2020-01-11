@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+          <a class="btn btn-outline-info" style="color:orange;font-family: Verdana;border-color:blue;hover:blue" href="{{ url_for('add_employee_data') }}"> Add Employee</a>
+<br/>
+<br/>
+{% for employee in employees.items %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+                <br/>
+              <h3><a class="mr-2" style="color:blue;font-family: Verdana" href="{{ url_for('edit_employee_data', employee_id=employee.id )}}">{{ employee.name }}</a></h3>
+              <small class="text-muted">{{ employee.date_posted.strftime('%Y-%m-%d') }}</small>
+                <h4><a class="article-title" style="color:orange;font-family: Verdana" href="{{ url_for('display_employee_data', employee_id=employee.id) }}">{{ employee.email }}</a></h4>
+                <br/>
+                <br/>
+            </div>
+          </div>
+        </article>
+{% endfor %}
+
+
+    {% for page_num in employees.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+      {% if page_num %}
+        {% if employees.page == page_num %}
+          <a class="btn btn-info mb-4" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a class="btn btn-outline-info mb-4" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...
+      {% endif %}
+    {% endfor %}
+{% endblock content %}
