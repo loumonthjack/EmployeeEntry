@@ -16,7 +16,7 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
 
 
 
-	-EmployeeWebsite
+	-EmployeeEntry
   		-employeewebsite
   		+run.py
     			-templates
