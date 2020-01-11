@@ -15,8 +15,10 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
 #Bootstrap
 
 -EmployeeWebsite
+
   -employeewebsite
   +run.py
+	
     -templates
       +layout.html
       +home.html
@@ -24,8 +26,10 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
       +register.html
       +employee_data.html
       +update_employee_data.html
+			
     -static
       +main.css
+			
     +__init__.py
     +forms.py
     +models.py
