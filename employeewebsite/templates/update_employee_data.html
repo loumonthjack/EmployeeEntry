@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <h1>{{ title }}</h1>
+    <form action="" method="POST">
+        <fieldset class="form-group">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <input type="text" name="state" placeholder="State">
+            </div>
+            <div class="form-group">
+                <input type="number" name="zip" placeholder="Zip Code">
+            </div>
+            <div class="form-group">
+                <input type="number" name="phone" placeholder="Phone Number">
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <input type="submit" value="Save Employee Data">
+        </div>
+    </form>
+</div>
+{% endblock content %}
