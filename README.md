@@ -1,5 +1,5 @@
 # EmployeeEntry
-EmployeeEntry Website that allows for adding, editing, and deleting of employees
+EmployeeEntry Website that requires registation and validation of users, which then allows for adding, editing, and deleting of employee data
 
 
 Using Flask, SQLalchemy, and Bootstrap
