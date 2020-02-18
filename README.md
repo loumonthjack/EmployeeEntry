@@ -7,6 +7,7 @@ Link:  https://EmployeeFlaskApp.PythonAnywhere.com
 Quick Login:
 
  Email: admin@admin.com
+
  Password: admin
 
 Using Flask, SQLalchemy, and Bootstrap
