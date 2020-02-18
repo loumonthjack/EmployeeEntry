@@ -5,6 +5,7 @@ EmployeeEntry Website that requires registation and validation of users, which t
 Link:  https://EmployeeFlaskApp.PythonAnywhere.com
 
 Quick Login:
+
  Email: admin@admin.com
  Password: admin
 
