@@ -27,17 +27,16 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
 	-EmployeeEntry
 		+run.py
   		-employeewebsite
-			+__init__.py
-    			+forms.py
-    			+models.py
-    			+routes.py
-    			-templates
-			
-      				+layout.html
-      				+home.html
-      				+login.html
-      				+register.html
-      				+employee_data.html
-      				+update_employee_data.html		
-    			-static
-      				+main.css		
+				+__init__.py
+    				+forms.py
+    				+models.py
+    				+routes.py
+    				-templates
+					+layout.html
+      					+home.html
+      					+login.html
+      					+register.html
+      					+employee_data.html
+      					+update_employee_data.html		
+    				-static
+      					+main.css		
