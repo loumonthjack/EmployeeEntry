@@ -32,7 +32,7 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
     			+models.py
     			+routes.py
     			-templates
-				+layout.html
+					+layout.html
       				+home.html
       				+login.html
       				+register.html
