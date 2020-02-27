@@ -1,6 +1,6 @@
-# EmployeeEntryWebsite
+# EmployeeManagementWebsite
 # Flask-SQLite-SQLalchemy-Jinja-Python
-EmployeeEntry Website that requires registation and validation of users, which then allows for adding, editing, and deleting of employee data
+Simple Employee Management Website that requires registation and validation of users, which then allows for adding, editing, and deleting of employee data
 
 Link:  https://EmployeeFlaskApp.PythonAnywhere.com
 
@@ -25,9 +25,14 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
 
 
 	-EmployeeEntry
+		+run.py
   		-employeewebsite
-  		+run.py
+			+__init__.py
+    			+forms.py
+    			+models.py
+    			+routes.py
     			-templates
+			
       				+layout.html
       				+home.html
       				+login.html
@@ -36,7 +41,3 @@ Linking of Models, Routes, Forms and Templates to create MVC app architecture
       				+update_employee_data.html		
     			-static
       				+main.css		
-    			+__init__.py
-    			+forms.py
-    			+models.py
-    			+routes.py
